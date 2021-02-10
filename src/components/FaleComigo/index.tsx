@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import Form from './Form';
 
 const FaleComigo: React.FC = () => {
   return (
-    <div className="relative bg-white">
+    <div id="fale-comigo" className="relative bg-white">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
@@ -73,7 +72,11 @@ const FaleComigo: React.FC = () => {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <Form netlify>
+            <form
+              data-netlify="true"
+              name="fale-comigo"
+              className="grid grid-cols-1 gap-y-6"
+            >
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Nome
@@ -133,7 +136,7 @@ const FaleComigo: React.FC = () => {
                   Enviar
                 </button>
               </div>
-            </Form>
+            </form>
           </div>
         </div>
       </div>
