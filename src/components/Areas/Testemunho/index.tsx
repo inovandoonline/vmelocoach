@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testemunho: React.FC = () => {
   return (
-    <div className="bg-white pt-16 lg:py-24">
+    <div id="testemunhos" className="bg-white pt-16 lg:py-24">
       <div className="pb-16 bg-blue-600 lg:pb-0 lg:z-10 lg:relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="relative lg:-my-8">
@@ -13,7 +13,7 @@ const Testemunho: React.FC = () => {
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
               <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <img
-                  className="object-cover lg:h-full lg:w-full"
+                  className="object-cover object-top lg:h-full lg:w-full"
                   src="/images/felipe.jpg"
                   alt="Profile Felipe"
                 />
