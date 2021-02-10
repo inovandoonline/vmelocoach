@@ -4,7 +4,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { useMenu } from '../../hooks/useMenu';
 
 const Header: React.FC = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   function toggleMenu(): void {
     setOpen(!open);
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
             </button>
           </div>
           <nav className="hidden md:flex space-x-10">
-            {menuState.map(({ name, link, externo }) => (
+            {menuState.map(({ name, link }) => (
               <a
                 key={link}
                 href={link}

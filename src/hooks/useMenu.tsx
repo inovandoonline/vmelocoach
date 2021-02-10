@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useContext } from 'react';
 
 interface MenuLinkDTO {
   name: string;
@@ -32,6 +32,11 @@ const MenuProvider: React.FC = ({ children }) => {
     {
       name: 'Testemunhos',
       link: '/#testemunhos',
+      externo: false,
+    },
+    {
+      name: 'Quanto Custa',
+      link: '/#quanto-custa',
       externo: false,
     },
     {
