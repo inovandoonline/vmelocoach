@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 const SobreCoaching: React.FC = () => {
   return (
     <>
-      <div className="relative bg-white">
+      <div id="coach-vs-coaching" className="relative bg-white">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
