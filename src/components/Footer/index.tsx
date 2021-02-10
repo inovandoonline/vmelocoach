@@ -1,10 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { FiInstagram, FiFacebook, FiYoutube } from 'react-icons/fi';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { useMenu } from '../../hooks/useMenu';
 
 const Footer: React.FC = () => {
   const [ano, setAno] = useState(1900);
   const getYear = new Date().getFullYear();
+
+  const { menuState } = useMenu();
 
   useMemo(() => {
     setAno(getYear);
@@ -18,14 +21,17 @@ const Footer: React.FC = () => {
             className="-mx-5 -my-2 flex flex-wrap justify-center"
             aria-label="Footer"
           >
-            <div className="px-5 py-2">
-              <a
-                href="/#"
-                className="text-base text-gray-500 transition hover:text-gray-900"
-              >
-                Inicio
-              </a>
-            </div>
+            {menuState.map(({ name, link }) => (
+              <div className="px-5 py-2">
+                <a
+                  key={link}
+                  href={link}
+                  className="text-base text-gray-500 transition hover:text-gray-900"
+                >
+                  {name}
+                </a>
+              </div>
+            ))}
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
             <a
