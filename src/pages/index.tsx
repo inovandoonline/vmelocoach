@@ -1,11 +1,14 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Head from 'next/head';
+import BeneficioPessoal from '../components/Areas/Beneficios/Pessoal';
 import EmpresasQueUsam from '../components/Areas/EmpresasQueUsam';
 import SobreCoaching from '../components/Areas/SobreCoaching';
+import Testemunho from '../components/Areas/Testemunho';
 import FaleComigo from '../components/FaleComigo';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <>
       <Head>
@@ -14,6 +17,8 @@ export default function Home() {
       <Hero />
       <SobreCoaching />
       <EmpresasQueUsam />
+      <BeneficioPessoal />
+      <Testemunho />
       <FaleComigo />
       <Footer />
     </>
