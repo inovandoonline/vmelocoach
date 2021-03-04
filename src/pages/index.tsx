@@ -3,6 +3,7 @@ import Head from 'next/head';
 import BeneficioPessoal from '../components/Areas/Beneficios/Pessoal';
 import BeneficioProfissional from '../components/Areas/Beneficios/Profissional';
 import EmpresasQueUsam from '../components/Areas/EmpresasQueUsam';
+import FAQ from '../components/Areas/FAQ';
 import SobreCoaching from '../components/Areas/SobreCoaching';
 import Testemunho from '../components/Areas/Testemunho';
 import Valor from '../components/Areas/Valor';
@@ -20,9 +21,11 @@ export default function Home(): JSX.Element {
       <SobreCoaching />
       <EmpresasQueUsam />
       <BeneficioPessoal />
+      <Testemunho />
       <BeneficioProfissional />
       <Testemunho />
       <Valor />
+      <FAQ />
       <FaleComigo />
       <Footer />
     </>
