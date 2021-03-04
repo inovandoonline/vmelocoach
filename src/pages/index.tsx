@@ -4,6 +4,7 @@ import BeneficioPessoal from '../components/Areas/Beneficios/Pessoal';
 import BeneficioProfissional from '../components/Areas/Beneficios/Profissional';
 import EmpresasQueUsam from '../components/Areas/EmpresasQueUsam';
 import FAQ from '../components/Areas/FAQ';
+import Palestras from '../components/Areas/Palestras';
 import SobreCoaching from '../components/Areas/SobreCoaching';
 import Testemunho from '../components/Areas/Testemunho';
 import Valor from '../components/Areas/Valor';
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
       <Testemunho />
       <BeneficioProfissional />
       <Testemunho />
+      <Palestras />
       <Valor />
       <FAQ />
       <FaleComigo />
