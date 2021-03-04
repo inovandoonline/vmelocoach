@@ -20,9 +20,9 @@ const Header: React.FC = () => {
             <a href="/#">
               <span className="sr-only">Vinicius Melo Coach</span>
               <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                alt=""
+                className="w-64"
+                src="/images/new-logo.png"
+                alt="VMelo Coach Logo"
               />
             </a>
           </div>
@@ -79,9 +79,9 @@ const Header: React.FC = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                    alt="Workflow"
+                    className="w-64"
+                    src="/images/new-logo.png"
+                    alt="VMelo Coach Logo"
                   />
                 </div>
                 <div className="-mr-2">

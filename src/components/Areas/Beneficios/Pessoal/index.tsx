@@ -1,50 +1,9 @@
 import React from 'react';
-import BeneficioDTO from '../../../../dtos/beneficioDTO';
+import { useBeneficios } from '../../../../hooks/useBeneficios';
 import CheckSimples from '../../../Icones/CheckSimples';
 
 const BeneficioPessoal: React.FC = () => {
-  const beneficios: BeneficioDTO[] = [
-    {
-      name: 'Serviço 01',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 02',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 03',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 04',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 05',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 06',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 07',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      name: 'Serviço 08',
-      text:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-  ];
+  const { pessoais } = useBeneficios();
 
   return (
     <>
@@ -62,14 +21,14 @@ const BeneficioPessoal: React.FC = () => {
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            {beneficios.map(({ name, text }) => (
-              <div key={name} className="flex">
+            {pessoais.map(({ titulo, descricao }) => (
+              <div key={titulo} className="flex">
                 <CheckSimples />
                 <div className="ml-3">
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    {name}
+                    {titulo}
                   </dt>
-                  <dd className="mt-2 text-base text-gray-500">{text}</dd>
+                  <dd className="mt-2 text-base text-gray-500">{descricao}</dd>
                 </div>
               </div>
             ))}

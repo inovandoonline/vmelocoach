@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import Link from 'next/link';
 
 const FaleComigo: React.FC = () => {
   return (
@@ -14,6 +15,9 @@ const FaleComigo: React.FC = () => {
               Ficou com alguma dúvida?
             </h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
+              <Link href="/perguntas-frequentes">
+                <a href="/perguntas-frequentes">Visite nosso FAQ</a>
+              </Link>
               Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
               massa dictumst amet. Sapien tortor lacus arcu.
             </p>

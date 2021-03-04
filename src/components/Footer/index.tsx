@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             aria-label="Footer"
           >
             {menuState.map(({ name, link }) => (
-              <div className="px-5 py-2">
+              <div key={name} className="px-5 py-2">
                 <a
                   key={link}
                   href={link}
