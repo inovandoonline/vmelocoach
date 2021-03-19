@@ -29,6 +29,9 @@ const FaleComigo: React.FC = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'fale-comigo', ...formState }),
+    }).then(() => {
+      alert('Mensagem enviada com sucesso!');
+      setState(null);
     });
   }
 
@@ -124,7 +127,8 @@ const FaleComigo: React.FC = () => {
                   id="nome"
                   value={formState.nome}
                   onChange={(e) =>
-                    setState({ ...formState, nome: e.target.value })}
+                    setState({ ...formState, nome: e.target.value })
+                  }
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Informe seu nome"
@@ -140,7 +144,8 @@ const FaleComigo: React.FC = () => {
                   type="email"
                   value={formState.email}
                   onChange={(e) =>
-                    setState({ ...formState, email: e.target.value })}
+                    setState({ ...formState, email: e.target.value })
+                  }
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Email"
@@ -156,24 +161,25 @@ const FaleComigo: React.FC = () => {
                   id="telefone"
                   value={formState.telefone}
                   onChange={(e) =>
-                    setState({ ...formState, telefone: e.target.value })}
+                    setState({ ...formState, telefone: e.target.value })
+                  }
                   autoComplete="tel"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Telefone"
                 />
-                {formState.telefone}
               </div>
               <div>
-                <label htmlFor="message" className="sr-only">
+                <label htmlFor="mensagem" className="sr-only">
                   Mensagem
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
+                  id="mensagem"
+                  name="mensagem"
                   rows={4}
                   value={formState.mensagem}
                   onChange={(e) =>
-                    setState({ ...formState, mensagem: e.target.value })}
+                    setState({ ...formState, mensagem: e.target.value })
+                  }
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Mensagem"
                 />
