@@ -23,14 +23,14 @@ const BeneficioProfissional: React.FC = () => {
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            {profissionais.map(({ titulo, descricao }) => (
-              <div key={titulo} className="flex">
+            {profissionais.map(({ text }) => (
+              <div key={text} className="flex">
                 <CheckSimples />
                 <div className="ml-3">
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    {titulo}
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">{descricao}</dd>
+                  {/* <dt className="text-lg leading-6 font-medium text-gray-900">
+                    {text}
+                  </dt> */}
+                  <dd className="mt-2 text-base text-gray-500">{text}</dd>
                 </div>
               </div>
             ))}
