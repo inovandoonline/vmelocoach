@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
             </h2>
             <dl className="mt-6 space-y-6 divide-y divide-gray-200">
               {questionario.map((item) => (
-                <FaqItem item={item} />
+                <FaqItem key={item.pergunta} item={item} />
               ))}
             </dl>
           </div>

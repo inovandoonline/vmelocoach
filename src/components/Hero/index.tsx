@@ -5,18 +5,39 @@ const Hero: React.FC = () => (
   <div id="inicio" className="relative bg-gray-50">
     <Header />
     <main className="flex flex-wrap-reverse lg:relative">
-      <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+      <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-24 lg:text-left">
         <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span className="block xl:inline">Vinicius Melo</span>
             <span className="block text-blue-600 xl:inline"> Coach</span>
           </h1>
-          <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Funcionário Público, Coach e Analista de Perfil Comportamental pela
-            Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS. Com
-            formação acadêmica em História e Direito. Vinicius possui 10 anos de
-            experiência na Administração Pública.
-          </p>
+          <div className="text-lg text-gray-500 sm:text-xl max-w-md md:max-w-3xl">
+            <p className="mx-auto mt-3 md:mt-5">
+              Vinicius Melo Coach Coach e Analista de Perfil Comportamental,
+              pela Federação Brasileira de Coaching Integral Sistêmico -
+              FEBRACIS, Com formação acadêmica em História e Direito.
+            </p>
+            <p className="mx-auto mt-3 md:mt-5">
+              Ministrante dos best-sellers O Poder da Autorresponsabilidade; O
+              Poder da Ação e Poder e Alto Performance do Master Coach PhD Paulo
+              Vieira. Aos meus 30 anos, servidor público concursado, solteiro e
+              sem filhos, imaginava estar vivendo a vida ideal para alguém da
+              minha idade, uma vida tranquila, equilibrada, tudo, menos
+              medíocre.
+            </p>
+            <p className="mx-auto mt-3 md:mt-5">
+              Em meio a pandemia do Coronavírus (COVID-19), me propus a uma
+              imersão que me trouxe clareza e direcionamento pessoal e
+              profissional, mas foi preciso uma pandemia para que eu me
+              deparasse com a vida mediana que vivia, a vida que eu acreditava
+              estar evitando.
+            </p>
+            <p className="mx-auto mt-3 md:mt-5">
+              Quero contribuir com o seu autoconhecimento, para que você
+              construa a vida que merece viver! Espero poder colaborar neste
+              processo!
+            </p>
+          </div>
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
               <a

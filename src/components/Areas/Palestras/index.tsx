@@ -6,7 +6,7 @@ const Palestras: React.FC = () => {
   const { palestras } = usePalestras();
 
   return (
-    <div className="bg-gray-50 overflow-hidden">
+    <div id="palestras" className="bg-gray-50 overflow-hidden">
       <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <svg
           className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
@@ -47,6 +47,12 @@ const Palestras: React.FC = () => {
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Palestras especializadas para você ou sua empresa
             </h2>
+            <p className="my-2 text-gray-500">
+              Vinicius Melo é ministrante independente, habilitado pela
+              Federação Brasileira de Coaching Integral Sistêmico – FEBRACIS,
+              para ofertar Palestras, Cursos e Treinamentos baseados nos
+              best-sellers do Master Coach PhD Paulo Vieira.
+            </p>
           </div>
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {palestras.map((palestra) => (

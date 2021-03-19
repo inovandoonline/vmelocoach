@@ -7,6 +7,7 @@ import FAQ from '../components/Areas/FAQ';
 import Palestras from '../components/Areas/Palestras';
 import SobreCoaching from '../components/Areas/SobreCoaching';
 import Testemunho from '../components/Areas/Testemunho';
+import Topico from '../components/Areas/Topico';
 import Valor from '../components/Areas/Valor';
 import FaleComigo from '../components/FaleComigo';
 import Footer from '../components/Footer';
@@ -20,14 +21,14 @@ export default function Home(): JSX.Element {
       </Head>
       <Hero />
       <SobreCoaching />
-      <EmpresasQueUsam />
       <BeneficioPessoal />
-      <Testemunho />
-      <BeneficioProfissional />
-      <Testemunho />
+      <Topico />
+      {/* <EmpresasQueUsam /> */}
+      {/* <Testemunho /> */}
+      {/* <BeneficioProfissional /> */}
       <Palestras />
-      <Valor />
-      <FAQ />
+      {/* <Valor /> */}
+      {/* <FAQ /> */}
       <FaleComigo />
       <Footer />
     </>

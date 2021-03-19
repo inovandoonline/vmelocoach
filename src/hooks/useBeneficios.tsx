@@ -1,8 +1,7 @@
 import React, { createContext, useContext } from 'react';
 
 interface BeneficioDTO {
-  titulo: string;
-  descricao: string;
+  text: string;
 }
 
 interface BeneficiosContextDTO {
@@ -15,85 +14,57 @@ const BeneficiosContext = createContext<BeneficiosContextDTO | null>(null);
 const BeneficiosProvider: React.FC = ({ children }) => {
   const pessoais = [
     {
-      titulo: 'Serviço 01',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      text:
+        'Melhora significativa dos relacionamentos interpessoais, como família, amigos e relacionamentos amorosos;',
     },
     {
-      titulo: 'Serviço 02',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      text:
+        "Reorganização <a class='text-blue-600 underline' href='https://febracis.com/o-que-e-mentalidade-financeira-e-qual-e-a-sua-importancia/'>financeira</a> definitiva, proporcionando abundância",
     },
     {
-      titulo: 'Serviço 03',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      text:
+        "<a class='text-blue-600 underline' href='https://febracis.com/aprenda-a-ter-disciplina-financeira-por-meio-do-autoconhecimento/'>Autoconhecimento</a> e aumento da <a class='text-blue-600 underline' href='https://febracis.com/baixa-autoestima/'>autoestima</a>, impulsionando a sua autoconfiança",
     },
     {
-      titulo: 'Serviço 04',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      text:
+        'Definição de prioridades, metas e objetivos, com intuito de gerenciar melhor o tempo e, consequentemente, obter mais produtividade',
     },
     {
-      titulo: 'Serviço 05',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      titulo: 'Serviço 06',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      titulo: 'Serviço 07',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
-    },
-    {
-      titulo: 'Serviço 08',
-      descricao:
-        'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      text:
+        'Aumento da criatividade e do poder decisório na vida pessoal e profissional',
     },
   ];
   const profissionais = [
     {
-      titulo: 'Serviço 01',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 02',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 03',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 04',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 05',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 06',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 07',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
     {
-      titulo: 'Serviço 08',
-      descricao:
+      text:
         'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
     },
   ];

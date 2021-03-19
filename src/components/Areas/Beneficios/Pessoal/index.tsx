@@ -15,20 +15,43 @@ const BeneficioPessoal: React.FC = () => {
             </h2>
             <h3 className="text-3xl font-extrabold text-gray-900">Pessoais</h3>
             <p className="mt-4 text-lg text-gray-500">
-              O processo de coaching traz inúmeros benefícios aos coachees,
-              perceptíveis na vida pessoal e profissional. Separamos alguns dos
-              benefícios pessoais do coaching. Confira:
+              Geralmente, as pessoas que procuram o Coaching Integral Sistêmico
+              desejam obter sucesso em diversas áreas da sua vida. Ou seja,
+              tanto no âmbito{' '}
+              <a
+                href="https://febracis.com/evolucao-profissional/"
+                className="text-blue-600 underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                profissional
+              </a>
+              , como também no{' '}
+              <a
+                href="https://febracis.com/marketing-pessoal/"
+                className="text-blue-600 underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                pessoal
+              </a>
+              . Os benefícios são perceptíveis na vida de quem se propõe a
+              descobrir as novas possibilidades e quebrar as crenças limitantes
+              que impedem o crescimento. Alguns deles são:
             </p>
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            {pessoais.map(({ titulo, descricao }) => (
-              <div key={titulo} className="flex">
+          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
+            {pessoais.map(({ text }) => (
+              <div key={text} className="flex">
                 <CheckSimples />
                 <div className="ml-3">
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
+                  {/* <dt className="text-lg leading-6 font-medium text-gray-900">
                     {titulo}
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">{descricao}</dd>
+                  </dt> */}
+                  <dd
+                    className="mt-2 text-base text-gray-500"
+                    dangerouslySetInnerHTML={{ __html: text }}
+                  />
                 </div>
               </div>
             ))}

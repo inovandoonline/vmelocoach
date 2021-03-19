@@ -1,5 +1,5 @@
 export default interface PalestraDTO {
   titulo: string;
   slug: string;
-  conteudo: unknown;
+  conteudo: string;
 }

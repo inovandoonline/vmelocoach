@@ -20,8 +20,8 @@ const MenuProvider: React.FC = ({ children }) => {
       externo: false,
     },
     {
-      name: 'Coach vs Coaching',
-      link: '/#coach-vs-coaching',
+      name: 'Coaching',
+      link: '/#coaching',
       externo: false,
     },
     {
@@ -30,15 +30,15 @@ const MenuProvider: React.FC = ({ children }) => {
       externo: false,
     },
     {
-      name: 'Testemunhos',
-      link: '/#testemunhos',
+      name: 'Palestras',
+      link: '/#palestras',
       externo: false,
     },
-    {
-      name: 'Quanto Custa',
-      link: '/#quanto-custa',
-      externo: false,
-    },
+    // {
+    //   name: 'Quanto Custa',
+    //   link: '/#quanto-custa',
+    //   externo: false,
+    // },
     {
       name: 'Fale Comigo',
       link: '/#fale-comigo',
