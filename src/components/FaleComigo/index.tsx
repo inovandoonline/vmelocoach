@@ -55,8 +55,6 @@ const FaleComigo: React.FC = () => {
               <Link href="/perguntas-frequentes">
                 <a href="/perguntas-frequentes">Visite nosso FAQ</a>
               </Link>
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-              massa dictumst amet. Sapien tortor lacus arcu.
             </p>
             <dl className="mt-8 text-base text-gray-500">
               {/* <div>
@@ -132,7 +130,8 @@ const FaleComigo: React.FC = () => {
                   id="nome"
                   value={formState.nome}
                   onChange={(e) =>
-                    setState({ ...formState, nome: e.target.value })}
+                    setState({ ...formState, nome: e.target.value })
+                  }
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Informe seu nome"
@@ -148,7 +147,8 @@ const FaleComigo: React.FC = () => {
                   type="email"
                   value={formState.email}
                   onChange={(e) =>
-                    setState({ ...formState, email: e.target.value })}
+                    setState({ ...formState, email: e.target.value })
+                  }
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Email"
@@ -164,7 +164,8 @@ const FaleComigo: React.FC = () => {
                   id="telefone"
                   value={formState.telefone}
                   onChange={(e) =>
-                    setState({ ...formState, telefone: e.target.value })}
+                    setState({ ...formState, telefone: e.target.value })
+                  }
                   autoComplete="tel"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Telefone"
@@ -180,7 +181,8 @@ const FaleComigo: React.FC = () => {
                   rows={4}
                   value={formState.mensagem}
                   onChange={(e) =>
-                    setState({ ...formState, mensagem: e.target.value })}
+                    setState({ ...formState, mensagem: e.target.value })
+                  }
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Mensagem"
                 />
