@@ -6,8 +6,6 @@ import { FiArrowLeft } from 'react-icons/fi';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import PalestraDTO from '../../dtos/palestraDTO';
-import { palestras } from '../../hooks/usePalestras';
-import clearText from '../../utils/clearText';
 
 interface PalestraSlugProps {
   palestra: PalestraDTO;
@@ -20,15 +18,12 @@ export default function PalestraSlug({
     <>
       <Head>
         <title>{`Vinícius Melo Coach - ${palestra.titulo}`}</title>
-        <meta name="description" content={clearText(palestra.conteudo)} />
+        <meta name="description" content={palestra.conteudoClean} />
         <meta
           property="og:title"
           content={`Vinícius Melo Coach - ${palestra.titulo}`}
         />
-        <meta
-          property="og:description"
-          content={clearText(palestra.conteudo)}
-        />
+        <meta property="og:description" content={palestra.conteudoClean} />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -51,10 +46,7 @@ export default function PalestraSlug({
           name="twitter:title"
           content={`Vinícius Melo Coach - ${palestra.titulo}`}
         />
-        <meta
-          name="twitter:description"
-          content={clearText(palestra.conteudo)}
-        />
+        <meta name="twitter:description" content={palestra.conteudoClean} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="blue" />
@@ -204,22 +196,28 @@ export const getStaticPaths: GetStaticPaths = async () => {
     'https://raw.githubusercontent.com/inovandoonline/vmelocoach/main/public/content/palestras.json',
   );
   const pals = await response.json();
-  const paths = pals.map((palestra) => {
+  const paths = pals.map(({ slug }: PalestraDTO) => {
     return {
-      params: { slug: palestra.slug },
+      params: {
+        slug,
+      },
     };
   });
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params;
-  const palestra = palestras.find((p) => p.slug === slug);
-
+  const consulta = await fetch(
+    'https://raw.githubusercontent.com/inovandoonline/vmelocoach/main/public/content/palestras.json',
+  );
+  const response = await consulta.json();
+  const palestra = response.find((p: PalestraDTO) => p.slug === slug);
+  console.log(palestra);
   return {
     props: {
       palestra,
