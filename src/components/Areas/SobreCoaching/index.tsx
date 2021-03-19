@@ -108,7 +108,7 @@ const SobreCoaching: React.FC = () => {
                     >
                       crenças limitantes
                     </a>{' '}
-                    e fortalecer as e fortalecer as crenças positivas
+                    e fortalecer as crenças positivas
                   </li>
                 </ul>
                 <p>
