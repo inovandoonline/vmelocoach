@@ -10,8 +10,8 @@ const PalestrasContext = createContext<PalestrasContextDTO | null>(null);
 const PalestrasProvider: React.FC = ({ children }) => {
   const palestras = [
     {
-      titulo: 'Poder da Autoresponsabilidade',
-      slug: 'poder-da-autoresponsabilidade',
+      titulo: 'O Poder da Autoresponsabilidade',
+      slug: 'o-poder-da-autoresponsabilidade',
       conteudo: `
       <p>Este é um curso de imersão, com conteúdo estruturado para você colocar em prática todas as suas metas.</p>
       <p>Deixar de lado todas as desculpas que te fazem procrastinar decisões e ações significa se auto responsabilizar pela sua vida.</p>
@@ -20,8 +20,8 @@ const PalestrasProvider: React.FC = ({ children }) => {
       `,
     },
     {
-      titulo: 'Poder da Ação',
-      slug: 'poder-da-acao',
+      titulo: 'O Poder da Ação',
+      slug: 'o-poder-da-acao',
       conteudo: `
       <p>O que está entre o seu atual momento e os seus sonhos? A ação. Afinal, as conquistas estão diretamente relacionadas às ações que você emprega para conquistá-las.</p>
       <p>A palestra “O poder da Ação” vai ser o seu pontapé inicial para aproveitar todas as oportunidades que aparecem na sua vida.</p>

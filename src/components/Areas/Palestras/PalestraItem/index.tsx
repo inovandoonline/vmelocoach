@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillBulb } from 'react-icons/ai';
 import PalestraDTO from '../../../../dtos/palestraDTO';
-import CleanText from '../../../CleanText';
+import clearText from '../../../../utils/clearText';
 
 interface PalestraItemProps {
   palestra: PalestraDTO;
@@ -22,7 +22,7 @@ const PalestraItem: React.FC<PalestraItemProps> = ({ palestra }) => (
           {palestra.titulo}
         </dt>
         <dd className="mt-2 text-base text-gray-500 overflow-ellipsis overflow-hidden h-24">
-          <CleanText>{palestra.conteudo}</CleanText>
+          {clearText(palestra.conteudo)}
         </dd>
       </div>
     </a>

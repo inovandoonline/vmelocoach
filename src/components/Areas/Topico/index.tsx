@@ -89,14 +89,14 @@ const Topico: React.FC = () => (
               <a href="https://febracis.com/o-que-nao-te-falam-sobre-medo/">
                 medos
               </a>{' '}
-              do dia a do dia a dia.
+              do dia a dia.
             </p>
             <p>
               É para isso que existe a análise de perfil comportamental na
               maioria das empresas. Para compreender os diferentes tipos de
               perfis dos seus colaboradores e buscar a{' '}
               <a href="https://febracis.com/evolucao-profissional/">evolução</a>{' '}
-              evolução constante nos relacionamentos interpessoais.
+              constante nos relacionamentos interpessoais.
             </p>
             <p>
               Afinal, como podemos aplicar a análise de perfil do ambiente

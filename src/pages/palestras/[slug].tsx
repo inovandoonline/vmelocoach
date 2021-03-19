@@ -2,11 +2,12 @@ import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
-import { FiArrowLeft, FiArrowLeftCircle } from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import PalestraDTO from '../../dtos/palestraDTO';
 import { usePalestras } from '../../hooks/usePalestras';
+import clearText from '../../utils/clearText';
 
 const PalestraSlug: React.FC = () => {
   const router = useRouter();
@@ -20,12 +21,45 @@ const PalestraSlug: React.FC = () => {
     setPalestra(getPalestra);
   }, [palestras, slug]);
 
+  const title = `Vinícius Melo Coach ${
+    palestra && ` - Palestra: ${palestra.titulo}`
+  }`;
+
   return (
     <>
       <Head>
-        <title>
-          Vinícius Melo Coach {palestra && ` - Palestra: ${palestra.titulo}`}
-        </title>
+        <title>{title}</title>
+        <meta
+          name="description"
+          content={palestra && clearText(palestra.conteudo)}
+        />
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content={palestra && clearText(palestra.conteudo)}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={router.route} />
+        <meta
+          property="og:image"
+          content="http://d33wubrfki0l68.cloudfront.net/afcfdb7dc2bd5462794996e1182ff632a4e68544/10ce6/images/analise.jpg"
+        />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content={title} />
+        <meta
+          property="twitter:image"
+          content="http://d33wubrfki0l68.cloudfront.net/afcfdb7dc2bd5462794996e1182ff632a4e68544/10ce6/images/analise.jpg"
+        />
+        <meta name="twitter:title" content={title} />
+        <meta
+          name="twitter:description"
+          content={palestra && clearText(palestra.conteudo)}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="blue" />
+        <meta name="apple-mobile-web-app-title" content={title} />
+        <meta name="mobile-web-app-capable" content="yes" />
       </Head>
       <Header />
       <div className="relative py-16 bg-white overflow-hidden">

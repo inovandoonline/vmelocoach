@@ -51,20 +51,20 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href="/#"
+              href="https://www.instagram.com/viniciusmcoach/"
               className="text-gray-400 transition hover:text-purple-500"
             >
               <span className="sr-only">Instagram</span>
               <FiInstagram className="h-6 w-6" />
             </a>
 
-            <a
+            {/* <a
               href="/#"
               className="text-gray-400 transition hover:text-red-500"
             >
               <span className="sr-only">YouTube</span>
               <FiYoutube className="h-6 w-6" />
-            </a>
+            </a> */}
           </div>
           <p className="mt-8 text-center text-base text-gray-400">
             &copy; 2021 - {ano} Vinicius Melo Coach

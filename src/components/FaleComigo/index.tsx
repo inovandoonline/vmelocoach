@@ -80,6 +80,7 @@ const FaleComigo: React.FC = () => {
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
               data-netlify="true"
+              method="POST"
               name="fale-comigo"
               className="grid grid-cols-1 gap-y-6"
             >
