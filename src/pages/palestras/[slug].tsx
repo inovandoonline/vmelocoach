@@ -1,64 +1,67 @@
-import { useRouter } from 'next/dist/client/router';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import React, { useMemo, useState } from 'react';
+import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import PalestraDTO from '../../dtos/palestraDTO';
-import { usePalestras } from '../../hooks/usePalestras';
+import { palestras } from '../../hooks/usePalestras';
 import clearText from '../../utils/clearText';
 
-const PalestraSlug: React.FC = () => {
-  const router = useRouter();
-  const { slug } = router.query;
+interface PalestraSlugProps {
+  palestra: PalestraDTO;
+}
 
-  const { palestras } = usePalestras();
-  const [palestra, setPalestra] = useState<PalestraDTO>(null);
-
-  useMemo(() => {
-    const getPalestra = palestras.find((e) => e.slug === slug);
-    setPalestra(getPalestra);
-  }, [palestras, slug]);
-
-  const title = `Vinícius Melo Coach ${
-    palestra && ` - Palestra: ${palestra.titulo}`
-  }`;
-
+export default function PalestraSlug({
+  palestra,
+}: PalestraSlugProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{`Vinícius Melo Coach - ${palestra.titulo}`}</title>
+        <meta name="description" content={clearText(palestra.conteudo)} />
         <meta
-          name="description"
-          content={palestra && clearText(palestra.conteudo)}
+          property="og:title"
+          content={`Vinícius Melo Coach - ${palestra.titulo}`}
         />
-        <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content={palestra && clearText(palestra.conteudo)}
+          content={clearText(palestra.conteudo)}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={router.route} />
+        <meta
+          property="og:url"
+          content={`https://vmelocoach.com/${palestra.slug}`}
+        />
         <meta
           property="og:image"
           content="http://d33wubrfki0l68.cloudfront.net/afcfdb7dc2bd5462794996e1182ff632a4e68544/10ce6/images/analise.jpg"
         />
         <meta property="og:locale" content="pt_BR" />
-        <meta property="og:site_name" content={title} />
+        <meta
+          property="og:site_name"
+          content={`Vinícius Melo Coach - ${palestra.titulo}`}
+        />
         <meta
           property="twitter:image"
           content="http://d33wubrfki0l68.cloudfront.net/afcfdb7dc2bd5462794996e1182ff632a4e68544/10ce6/images/analise.jpg"
         />
-        <meta name="twitter:title" content={title} />
+        <meta
+          name="twitter:title"
+          content={`Vinícius Melo Coach - ${palestra.titulo}`}
+        />
         <meta
           name="twitter:description"
-          content={palestra && clearText(palestra.conteudo)}
+          content={clearText(palestra.conteudo)}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="blue" />
-        <meta name="apple-mobile-web-app-title" content={title} />
+        <meta
+          name="apple-mobile-web-app-title"
+          content={`Vinícius Melo Coach - ${palestra.titulo}`}
+        />
         <meta name="mobile-web-app-capable" content="yes" />
       </Head>
       <Header />
@@ -181,22 +184,45 @@ const PalestraSlug: React.FC = () => {
                 Palestra
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                {palestra && palestra.titulo}
+                {palestra.titulo}
               </span>
             </h1>
           </div>
-          {palestra && (
-            <div
-              className="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto"
-              dangerouslySetInnerHTML={{ __html: palestra.conteudo }}
-            />
-          )}
+          <div
+            className="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto"
+            dangerouslySetInnerHTML={{ __html: palestra.conteudo }}
+          />
         </div>
       </div>
-
       <Footer />
     </>
   );
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const response = await fetch(
+    'https://raw.githubusercontent.com/inovandoonline/vmelocoach/main/public/content/palestras.json',
+  );
+  const pals = await response.json();
+  const paths = pals.map((palestra) => {
+    return {
+      params: { slug: palestra.slug },
+    };
+  });
+
+  return {
+    paths,
+    fallback: true,
+  };
 };
 
-export default PalestraSlug;
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params;
+  const palestra = palestras.find((p) => p.slug === slug);
+
+  return {
+    props: {
+      palestra,
+    },
+  };
+};

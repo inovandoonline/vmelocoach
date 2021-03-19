@@ -1,8 +1,37 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
+const encode = (data): string => {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+};
+
+interface FormStateProps {
+  nome: string;
+  email: string;
+  telefone: string;
+  mensagem: string;
+}
+
 const FaleComigo: React.FC = () => {
+  const [formState, setState] = useState<FormStateProps>({
+    nome: '',
+    email: '',
+    mensagem: '',
+    telefone: '',
+  });
+
+  function submitForm(e): void {
+    e.preventDefault();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'fale-comigo', ...formState }),
+    });
+  }
+
   return (
     <div id="fale-comigo" className="relative bg-white">
       <div className="absolute inset-0">
@@ -80,18 +109,22 @@ const FaleComigo: React.FC = () => {
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
               data-netlify="true"
-              method="POST"
               name="fale-comigo"
+              action="/?success=true"
               className="grid grid-cols-1 gap-y-6"
             >
+              <input type="hidden" name="form-name" value="fale-comigo" />
               <div>
-                <label htmlFor="full_name" className="sr-only">
+                <label htmlFor="nome" className="sr-only">
                   Nome
                 </label>
                 <input
                   type="text"
-                  name="full_name"
-                  id="full_name"
+                  name="nome"
+                  id="nome"
+                  value={formState.nome}
+                  onChange={(e) =>
+                    setState({ ...formState, nome: e.target.value })}
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Informe seu nome"
@@ -105,6 +138,9 @@ const FaleComigo: React.FC = () => {
                   id="email"
                   name="email"
                   type="email"
+                  value={formState.email}
+                  onChange={(e) =>
+                    setState({ ...formState, email: e.target.value })}
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Email"
@@ -118,10 +154,14 @@ const FaleComigo: React.FC = () => {
                   type="text"
                   name="telefone"
                   id="telefone"
+                  value={formState.telefone}
+                  onChange={(e) =>
+                    setState({ ...formState, telefone: e.target.value })}
                   autoComplete="tel"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Telefone"
                 />
+                {formState.telefone}
               </div>
               <div>
                 <label htmlFor="message" className="sr-only">
@@ -131,13 +171,17 @@ const FaleComigo: React.FC = () => {
                   id="message"
                   name="message"
                   rows={4}
+                  value={formState.mensagem}
+                  onChange={(e) =>
+                    setState({ ...formState, mensagem: e.target.value })}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Mensagem"
                 />
               </div>
               <div>
                 <button
-                  type="submit"
+                  type="button"
+                  onClick={submitForm}
                   className="w-full md:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   Enviar
