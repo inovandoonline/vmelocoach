@@ -13,9 +13,9 @@ const Hero: React.FC = () => (
           </h1>
           <div className="text-lg text-gray-500 sm:text-xl max-w-md md:max-w-3xl">
             <p className="mx-auto mt-3 md:mt-5">
-              Vinicius Melo Coach Coach e Analista de Perfil Comportamental,
-              pela Federação Brasileira de Coaching Integral Sistêmico -
-              FEBRACIS, Com formação acadêmica em História e Direito.
+              Vinicius Melo Coach e Analista de Perfil Comportamental, pela
+              Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS,
+              Com formação acadêmica em História e Direito.
             </p>
             <p className="mx-auto mt-3 md:mt-5">
               Ministrante dos best-sellers O Poder da Autorresponsabilidade; O
