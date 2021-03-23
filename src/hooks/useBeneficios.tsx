@@ -33,6 +33,10 @@ const BeneficiosProvider: React.FC = ({ children }) => {
       text:
         'Aumento da criatividade e do poder decisório na vida pessoal e profissional',
     },
+    {
+      text:
+        'Desenvolvimento da alta performance no âmbito pessoal e profissional, que possibilitará o alcance de resultados exponenciais.',
+    },
   ];
   const profissionais = [
     {

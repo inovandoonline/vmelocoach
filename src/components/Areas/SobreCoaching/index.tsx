@@ -39,15 +39,7 @@ const SobreCoaching: React.FC = () => {
                 <p>
                   Essa metodologia trabalha os dois hemisférios do cérebro, o
                   esquerdo e o direito. O primeiro é responsável pela parte
-                  cognitiva e o segundo, pelas{' '}
-                  <a
-                    href="https://febracis.com/controle-das-emocoes/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    emoções
-                  </a>
-                  .
+                  cognitiva e o segundo, pelas emoções.
                 </p>
                 <p>
                   Por isso, o Coaching Integral Sistêmico não é só um coaching
@@ -56,24 +48,9 @@ const SobreCoaching: React.FC = () => {
                 </p>
                 <p>
                   O que você está esperando para iniciar o seu processo de
-                  Coaching Integral Sistêmico e melhorar definitivamente a sua{' '}
-                  <a
-                    href="https://febracis.com/curso/business-high-performance/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    performance
-                  </a>
-                  , atingindo de uma vez por todas os seus objetivos e
-                  alcançando o sucesso{' '}
-                  <a
-                    href="https://febracis.com/desculpas-que-impedem-alcancar-sucesso/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    absoluto
-                  </a>
-                  ?
+                  Coaching Integral Sistêmico e melhorar definitivamente a sua
+                  performance , atingindo de uma vez por todas os seus objetivos
+                  e alcançando o sucesso absoluto ?
                 </p>
               </div>
             </div>
@@ -100,15 +77,8 @@ const SobreCoaching: React.FC = () => {
                   </li>
                   <li>Desenvolver a Inteligência Emocional</li>
                   <li>
-                    Reprogramar as{' '}
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://febracis.com/o-que-sao-crencas-limitantes/"
-                    >
-                      crenças limitantes
-                    </a>{' '}
-                    e fortalecer as crenças positivas
+                    Reprogramar as crenças limitantes e fortalecer as crenças
+                    positivas
                   </li>
                 </ul>
                 <p>
@@ -118,30 +88,15 @@ const SobreCoaching: React.FC = () => {
                   psiquiatra, psicanalista e pesquisador Norman Doidge.
                 </p>
                 <p>
-                  No âmbito da{' '}
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://febracis.com/inteligencia-emocional-no-trabalho/"
-                  >
-                    inteligência emocional
-                  </a>{' '}
-                  o Coaching Integral Sistêmico bebe da fonte do PhD em
-                  psicologia pela Universidade de Harvard, Daniel Goleman.
+                  No âmbito da inteligência emocional o Coaching Integral
+                  Sistêmico bebe da fonte do PhD em psicologia pela Universidade
+                  de Harvard, Daniel Goleman.
                 </p>
                 <p>
                   Todas essas pesquisas foram compiladas e cuidadosamente
-                  explicadas por{' '}
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://febracis.com/sobre-paulo-vieira/"
-                  >
-                    Paulo Vieira
-                  </a>
-                  , em best sellers como “O poder da ação”, “O poder da
-                  autoresponsabilidade” e “Criação de Riqueza”, entre muitos
-                  outros.
+                  explicadas por Paulo Vieira , em best sellers como “O poder da
+                  ação”, “O poder da autoresponsabilidade” e “Criação de
+                  Riqueza”, entre muitos outros.
                 </p>
               </div>
             </div>

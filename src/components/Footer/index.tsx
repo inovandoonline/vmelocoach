@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
             <a
-              href="https://www.facebook.com/viniciusmcoach/"
+              href="http://www.facebook.com/vmelocoach"
               className="text-gray-400 transition hover:text-blue-500"
             >
               <span className="sr-only">Facebook</span>

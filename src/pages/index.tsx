@@ -59,7 +59,7 @@ export default function Home(): JSX.Element {
       {/* <BeneficioProfissional /> */}
       <Palestras />
       {/* <Valor /> */}
-      {/* <FAQ /> */}
+      <FAQ />
       <FaleComigo />
       <Footer />
     </>

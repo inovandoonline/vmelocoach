@@ -17,27 +17,10 @@ const BeneficioPessoal: React.FC = () => {
             <p className="mt-4 text-lg text-gray-500">
               Geralmente, as pessoas que procuram o Coaching Integral Sistêmico
               desejam obter sucesso em diversas áreas da sua vida. Ou seja,
-              tanto no âmbito{' '}
-              <a
-                href="https://febracis.com/evolucao-profissional/"
-                className="text-blue-600 underline"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                profissional
-              </a>
-              , como também no{' '}
-              <a
-                href="https://febracis.com/marketing-pessoal/"
-                className="text-blue-600 underline"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                pessoal
-              </a>
-              . Os benefícios são perceptíveis na vida de quem se propõe a
-              descobrir as novas possibilidades e quebrar as crenças limitantes
-              que impedem o crescimento. Alguns deles são:
+              tanto no âmbito profissional, como também no pessoal. Os
+              benefícios são perceptíveis na vida de quem se propõe a descobrir
+              as novas possibilidades e quebrar as crenças limitantes que
+              impedem o crescimento. Alguns deles são:
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">

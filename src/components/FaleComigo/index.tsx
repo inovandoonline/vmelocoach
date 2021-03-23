@@ -82,8 +82,8 @@ const FaleComigo: React.FC = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <a href="tel:+5596981151778" className="ml-3">
-                    (96) 98115-1778
+                  <a href="tel:+5596991191313" className="ml-3">
+                    (96) 99119-1313
                   </a>
                 </dd>
               </div>
@@ -105,7 +105,9 @@ const FaleComigo: React.FC = () => {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="ml-3">contato@vmelocoach.com</span>
+                  <a href="mailto:contato@vmelocoach.com" className="ml-3">
+                    contato@vmelocoach.com
+                  </a>
                 </dd>
               </div>
             </dl>
@@ -130,8 +132,7 @@ const FaleComigo: React.FC = () => {
                   id="nome"
                   value={formState.nome}
                   onChange={(e) =>
-                    setState({ ...formState, nome: e.target.value })
-                  }
+                    setState({ ...formState, nome: e.target.value })}
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Informe seu nome"
@@ -147,8 +148,7 @@ const FaleComigo: React.FC = () => {
                   type="email"
                   value={formState.email}
                   onChange={(e) =>
-                    setState({ ...formState, email: e.target.value })
-                  }
+                    setState({ ...formState, email: e.target.value })}
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Email"
@@ -164,8 +164,7 @@ const FaleComigo: React.FC = () => {
                   id="telefone"
                   value={formState.telefone}
                   onChange={(e) =>
-                    setState({ ...formState, telefone: e.target.value })
-                  }
+                    setState({ ...formState, telefone: e.target.value })}
                   autoComplete="tel"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Telefone"
@@ -181,8 +180,7 @@ const FaleComigo: React.FC = () => {
                   rows={4}
                   value={formState.mensagem}
                   onChange={(e) =>
-                    setState({ ...formState, mensagem: e.target.value })
-                  }
+                    setState({ ...formState, mensagem: e.target.value })}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                   placeholder="Mensagem"
                 />

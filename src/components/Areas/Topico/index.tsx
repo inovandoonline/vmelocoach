@@ -65,56 +65,35 @@ const Topico: React.FC = () => (
           <div className="text-base max-w-prose prose-blue mx-auto lg:max-w-none">
             <p className="text-lg text-gray-500">
               Todos nós temos personalidades diferentes. No entanto, nem sempre
-              nos damos conta dessa constatação e deixamos que os{' '}
-              <a href="https://febracis.com/gestao-de-conflitos-nas-organizacoes/">
-                conflitos
-              </a>{' '}
+              nos damos conta dessa constatação e deixamos que os conflitos
               roubem a nossa energia vital. Será que poderíamos evitar conflitos
-              se fizéssemos sempre uma{' '}
-              <a href="https://febracis.com/analise-comportamental-conheca-ferramenta-que-esta-revolucionando-o-mercado/">
-                análise
-              </a>{' '}
-              de perfil comportamental inclusive na nossa vida pessoal?
+              se fizéssemos sempre uma análise de perfil comportamental
+              inclusive na nossa vida pessoal?
             </p>
           </div>
           <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
             <p>
-              O{' '}
-              <a href="https://febracis.com/quebrando-ciclos-de-dor-com-autoconhecimento/">
-                autoconhecimento
-              </a>{' '}
-              também passa por este entendimento. Encontramos os nossos pontos
-              de melhoria e nossas potencialidades com mais naturalidade quando
-              percebemos o nosso estilo de lidar com os nossos{' '}
-              <a href="https://febracis.com/o-que-nao-te-falam-sobre-medo/">
-                medos
-              </a>{' '}
-              do dia a dia.
+              O autoconhecimento também passa por este entendimento. Encontramos
+              os nossos pontos de melhoria e nossas potencialidades com mais
+              naturalidade quando percebemos o nosso estilo de lidar com os
+              nossos medos do dia a dia.
             </p>
             <p>
               É para isso que existe a análise de perfil comportamental na
               maioria das empresas. Para compreender os diferentes tipos de
-              perfis dos seus colaboradores e buscar a{' '}
-              <a href="https://febracis.com/evolucao-profissional/">evolução</a>{' '}
-              constante nos relacionamentos interpessoais.
+              perfis dos seus colaboradores e buscar a evolução constante nos
+              relacionamentos interpessoais.
             </p>
             <p>
               Afinal, como podemos aplicar a análise de perfil do ambiente
-              corporativo na nossa{' '}
-              <a href="https://febracis.com/autogestao/">vida pessoal</a>?
+              corporativo na nossa vida pessoal ?
             </p>
             <h3>O que é a análise de perfil comportamental?</h3>
             <p>
               Frequentemente, as empresas realizam a análise de perfil
-              comportamental com o objetivo de obter aumento significativo da{' '}
-              <a href="https://febracis.com/material/ferramentas-livro-poder-e-alta-performance/">
-                performance
-              </a>{' '}
-              dos colaboradores através da{' '}
-              <a href="https://febracis.com/material/guia-da-gestao-de-pessoas-como-liderar-uma-equipe-e-alcancar-grandes-resultados/">
-                gestão
-              </a>{' '}
-              efetiva de pessoas.
+              comportamental com o objetivo de obter aumento significativo da
+              performance dos colaboradores através da gestão efetiva de
+              pessoas.
             </p>
             <p>
               Isso quer dizer identificar os gargalos da empresa e a necessidade
@@ -122,26 +101,15 @@ const Topico: React.FC = () => (
               mostrar todo o seu potencial.
             </p>
             <p>
-              A análise de perfil promove uma{' '}
-              <a href="https://febracis.com/comunicacao-nao-violenta/">
-                comunicação
-              </a>{' '}
-              mais eficaz entre equipes e gestores. Estes, por sua vez,
-              conseguem desenvolver{' '}
-              <a href="https://febracis.com/4-chaves-para-o-sucesso-dos-grandes-lideres/">
-                líderes
-              </a>{' '}
-              e identificar talentos, compreendendo suas características com
-              essa ferramenta.
+              A análise de perfil promove uma comunicação mais eficaz entre
+              equipes e gestores. Estes, por sua vez, conseguem desenvolver
+              líderes e identificar talentos, compreendendo suas características
+              com essa ferramenta.
             </p>
             <p>
-              Para quem deseja se{' '}
-              <a href="https://febracis.com/desenvolvimento-pessoal/">
-                desenvolver
-              </a>{' '}
-              profissionalmente e também no âmbito pessoal, a análise de perfil
-              comportamental se encaixa perfeitamente num plano de
-              desenvolvimento individual.
+              Para quem deseja se desenvolver profissionalmente e também no
+              âmbito pessoal, a análise de perfil comportamental se encaixa
+              perfeitamente num plano de desenvolvimento individual.
             </p>
           </div>
         </div>
