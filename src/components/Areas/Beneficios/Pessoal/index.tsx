@@ -23,19 +23,14 @@ const BeneficioPessoal: React.FC = () => {
               impedem o crescimento. Alguns deles são:
             </p>
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
+          <dl className="flex mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
             {pessoais.map(({ text }) => (
-              <div key={text} className="flex">
+              <div key={text}>
                 <CheckSimples />
-                <div className="ml-3">
-                  {/* <dt className="text-lg leading-6 font-medium text-gray-900">
-                    {titulo}
-                  </dt> */}
-                  <dd
-                    className="mt-2 text-base text-gray-500"
-                    dangerouslySetInnerHTML={{ __html: text }}
-                  />
-                </div>
+                <dd
+                  className="ml-3 mt-2 text-base text-gray-500"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
               </div>
             ))}
           </dl>
