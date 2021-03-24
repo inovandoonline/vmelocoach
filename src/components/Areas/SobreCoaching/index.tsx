@@ -7,11 +7,15 @@ const SobreCoaching: React.FC = () => {
       <div id="coaching" className="relative bg-white">
         <div className="lg:absolute lg:inset-0 hidden lg:block">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-            <img
-              className="h-full w-full object-cover object-top absolute"
-              src="/images/apresentacao.jpg"
-              alt=""
-            />
+            <picture className="h-full w-full object-cover object-top absolute">
+              <source type="image/webp" srcSet="/images/apresentacao.webp" />
+              <source type="image/jpeg" srcSet="/images/apresentacao.jpg" />
+              <img
+                className="h-full w-full object-cover object-top absolute"
+                src="/images/apresentacao.jpg"
+                alt=""
+              />
+            </picture>
           </div>
         </div>
         <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
@@ -103,11 +107,15 @@ const SobreCoaching: React.FC = () => {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden lg:block">
-          <img
-            className="h-56 w-full object-contain md:object-cover object-top lg:absolute lg:h-full"
-            src="/images/duvida.jpg"
-            alt=""
-          />
+          <picture className="h-56 w-full object-contain md:object-cover object-top lg:absolute lg:h-full">
+            <source type="image/webp" srcSet="/images/duvida.webp" />
+            <source type="image/jpeg" srcSet="/images/duvida.jpg" />
+            <img
+              className="h-56 w-full object-contain md:object-cover object-top lg:absolute lg:h-full"
+              src="/images/duvida.jpg"
+              alt=""
+            />
+          </picture>
         </div>
       </div>
     </>

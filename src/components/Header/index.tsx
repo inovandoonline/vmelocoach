@@ -19,11 +19,15 @@ const Header: React.FC = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/#">
               <span className="sr-only">Vinicius Melo Coach</span>
-              <img
-                className="w-64"
-                src="/images/new-logo.png"
-                alt="VMelo Coach Logo"
-              />
+              <picture className="w-64">
+                <source type="image/webp" srcSet="/images/new-logo.webp" />
+                <source type="image/png" srcSet="/images/new-logo.png" />
+                <img
+                  className="w-64"
+                  src="/images/new-logo.png"
+                  alt="VMelo Coach Logo"
+                />
+              </picture>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -78,11 +82,15 @@ const Header: React.FC = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="w-64"
-                    src="/images/new-logo.png"
-                    alt="VMelo Coach Logo"
-                  />
+                  <picture className="w-64">
+                    <source type="image/webp" srcSet="/images/new-logo.webp" />
+                    <source type="image/png" srcSet="/images/new-logo.png" />
+                    <img
+                      className="w-64"
+                      src="/images/new-logo.png"
+                      alt="VMelo Coach Logo"
+                    />
+                  </picture>
                 </div>
                 <div className="-mr-2">
                   <button

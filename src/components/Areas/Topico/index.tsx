@@ -50,13 +50,15 @@ const Topico: React.FC = () => (
           <div className="relative text-base mx-auto max-w-prose lg:max-w-none hidden lg:block">
             <figure>
               <div className="sm:aspect-w-12 sm:aspect-h-7 lg:aspect-none">
-                <img
-                  className="rounded-lg shadow-lg object-cover object-top"
-                  src="/images/analise.jpg"
-                  alt="Analise de Perfil Comportamental"
-                  width="1184"
-                  height="1376"
-                />
+                <picture className="rounded-lg shadow-lg object-cover object-top">
+                  <source type="image/webp" srcSet="/images/analise.webp" />
+                  <source type="image/jpg" srcSet="/images/analise.jpg" />
+                  <img
+                    className="rounded-lg shadow-lg object-cover object-top"
+                    src="/images/analise.jpg"
+                    alt="Analise de Perfil Comportamental"
+                  />
+                </picture>
               </div>
             </figure>
           </div>

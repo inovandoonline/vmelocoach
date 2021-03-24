@@ -34,6 +34,11 @@ const MenuProvider: React.FC = ({ children }) => {
       link: '/#palestras',
       externo: false,
     },
+    {
+      name: 'FAQ',
+      link: '/#faq',
+      externo: false,
+    },
     // {
     //   name: 'Quanto Custa',
     //   link: '/#quanto-custa',

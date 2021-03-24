@@ -1,6 +1,16 @@
 module.exports = {
-  purge: ['**/*.{ts,tsx}'],
-  // purge: [],
+  purge: {
+    mode: 'all',
+    // preserveHtmlElements: false,
+    enabled: true,
+    content: [
+      './src/**/*.ts',
+      './src/**/*.tsx',
+    ],
+    options: {
+      keyframes: true,
+    },
+  },
   darkMode: false,
   theme: {
     extend: {},

@@ -20,10 +20,12 @@ const Hero: React.FC = () => (
             <p className="mx-auto mt-3 md:mt-5">
               Ministrante dos best-sellers O Poder da Autorresponsabilidade; O
               Poder da Ação e Poder e Alto Performance do Master Coach PhD Paulo
-              Vieira. Aos meus 30 anos, servidor público concursado, solteiro e
-              sem filhos, imaginava estar vivendo a vida ideal para alguém da
-              minha idade, uma vida tranquila, equilibrada, tudo, menos
-              medíocre.
+              Vieira.
+            </p>
+            <p className="mx-auto mt-4 md:mt-5">
+              Aos meus 30 anos, servidor público concursado, solteiro e sem
+              filhos, imaginava estar vivendo a vida ideal para alguém da minha
+              idade, uma vida tranquila, equilibrada, tudo, menos medíocre.
             </p>
             <p className="mx-auto mt-3 md:mt-5">
               Em meio a pandemia do Coronavírus (COVID-19), me propus a uma
@@ -51,11 +53,15 @@ const Hero: React.FC = () => (
         </div>
       </div>
       <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full lg:mt-1">
-        <img
-          className="inset-0 w-full h-full object-top object-cover"
-          src="/images/hero.jpg"
-          alt="Vinicius Melo"
-        />
+        <picture className="inset-0 w-full h-full object-top object-cover">
+          <source type="image/webp" srcSet="/images/hero.webp" />
+          <source type="image/jpg" srcSet="/images/hero.jpg" />
+          <img
+            className="inset-0 w-full h-full object-top object-cover"
+            src="/images/hero.jpg"
+            alt="Vinicius Melo"
+          />
+        </picture>
       </div>
     </main>
   </div>

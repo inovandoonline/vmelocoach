@@ -20,12 +20,12 @@ export default function Home(): JSX.Element {
         <title>Vinicius Melo Coach</title>
         <meta
           name="description"
-          content="Vinicius Melo Coach Coach e Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
+          content="Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
         />
         <meta property="og:title" content="Vinicius Melo Coach" />
         <meta
           property="og:description"
-          content="Vinicius Melo Coach Coach e Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
+          content="Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://vmelocoach.com/" />
@@ -42,7 +42,7 @@ export default function Home(): JSX.Element {
         <meta name="twitter:title" content="Vinicius Melo Coach" />
         <meta
           name="twitter:description"
-          content="Vinicius Melo Coach Coach e Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
+          content="Analista de Perfil Comportamental, pela Federação Brasileira de Coaching Integral Sistêmico - FEBRACIS, Com formação acadêmica em História e Direito."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
