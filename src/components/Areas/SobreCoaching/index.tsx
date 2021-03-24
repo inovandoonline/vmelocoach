@@ -11,6 +11,7 @@ const SobreCoaching: React.FC = () => {
               <source type="image/webp" srcSet="/images/apresentacao.webp" />
               <source type="image/jpeg" srcSet="/images/apresentacao.jpg" />
               <img
+                loading="lazy"
                 className="h-full w-full object-cover object-top absolute"
                 src="/images/apresentacao.jpg"
                 alt=""
@@ -111,6 +112,7 @@ const SobreCoaching: React.FC = () => {
             <source type="image/webp" srcSet="/images/duvida.webp" />
             <source type="image/jpeg" srcSet="/images/duvida.jpg" />
             <img
+              loading="lazy"
               className="h-56 w-full object-contain md:object-cover object-top lg:absolute lg:h-full"
               src="/images/duvida.jpg"
               alt=""

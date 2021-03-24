@@ -57,6 +57,7 @@ const Hero: React.FC = () => (
           <source type="image/webp" srcSet="/images/hero.webp" />
           <source type="image/jpg" srcSet="/images/hero.jpg" />
           <img
+            loading="lazy"
             className="inset-0 w-full h-full object-top object-cover"
             src="/images/hero.jpg"
             alt="Vinicius Melo"

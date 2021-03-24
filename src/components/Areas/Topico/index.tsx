@@ -54,6 +54,7 @@ const Topico: React.FC = () => (
                   <source type="image/webp" srcSet="/images/analise.webp" />
                   <source type="image/jpg" srcSet="/images/analise.jpg" />
                   <img
+                    loading="lazy"
                     className="rounded-lg shadow-lg object-cover object-top"
                     src="/images/analise.jpg"
                     alt="Analise de Perfil Comportamental"

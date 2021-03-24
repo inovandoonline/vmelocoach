@@ -23,6 +23,7 @@ const Header: React.FC = () => {
                 <source type="image/webp" srcSet="/images/new-logo.webp" />
                 <source type="image/png" srcSet="/images/new-logo.png" />
                 <img
+                  loading="lazy"
                   className="w-64"
                   src="/images/new-logo.png"
                   alt="VMelo Coach Logo"
@@ -86,6 +87,7 @@ const Header: React.FC = () => {
                     <source type="image/webp" srcSet="/images/new-logo.webp" />
                     <source type="image/png" srcSet="/images/new-logo.png" />
                     <img
+                      loading="lazy"
                       className="w-64"
                       src="/images/new-logo.png"
                       alt="VMelo Coach Logo"
