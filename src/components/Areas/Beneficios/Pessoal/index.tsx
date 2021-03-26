@@ -23,9 +23,9 @@ const BeneficioPessoal: React.FC = () => {
               impedem o crescimento. Alguns deles são:
             </p>
           </div>
-          <dl className="flex mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
+          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
             {pessoais.map(({ text }) => (
-              <div key={text}>
+              <div key={text} className="flex items-center">
                 <CheckSimples />
                 <dd
                   className="ml-3 mt-2 text-base text-gray-500"
